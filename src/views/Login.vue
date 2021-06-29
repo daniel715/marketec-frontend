@@ -1,16 +1,17 @@
 <template>
   <div class="home">
-    <PaginaPrincipal/>
+    <img alt="Vue logo" src="../assets/logo.png">
+    <InicioSesion/>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import PaginaPrincipal from '@/components/PaginaPrincipal/PaginaPrincipal.vue'; // @ is an alias to /src
+import InicioSesion from '@/components/Login/InicioSesion.vue';
 
 @Component({
   components: {
-    PaginaPrincipal
+    InicioSesion
   },
 })
 export default class Home extends Vue {}

@@ -1,20 +1,14 @@
 <template>
-    <div>
-        <h1>Pagina Principal</h1>
-    </div>
+    <productsBar/>
 </template>
 
 <script>
-// import Header from  './Header.vue';
-
-// import Footer from './Footer.vue';
+import productsBar from './productsBar.vue'
 
 
 export default {
     components:{
-        // Header,
-        // Footer,
-
+        productsBar
     }
 }
 </script>

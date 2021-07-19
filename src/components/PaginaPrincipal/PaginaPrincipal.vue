@@ -1,18 +1,20 @@
 <template>
-    <productsBar/>
+  <div>
+    <productsBar />
+    <productDiscountBar />
+  </div>
 </template>
 
 <script>
-import productsBar from './productsBar.vue'
-
+import productsBar from "./productsBar.vue";
+import productDiscountBar from "./productDiscountBar.vue";
 
 export default {
-    components:{
-        productsBar
-    }
-}
+  components: {
+    productsBar,
+    productDiscountBar,
+  },
+};
 </script>
 
-<style lang="sass" scoped>
-
-</style>
+<style lang="sass" scoped></style>

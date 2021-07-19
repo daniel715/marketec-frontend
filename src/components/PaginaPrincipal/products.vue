@@ -2,27 +2,15 @@
 <b-card-group>
     <b-card
       title=""
-      img-src="https://picsum.photos/600/300/?image=25"
+      img-src="https://agriculture.basf.com/mx/images/Proteccion%20de%20Cultivos/Cultivos/Papa/MX-cultivo-papa.jpg"
       img-alt="Image"
       img-top
       tag="article"
-      style="max-width: 20rem"
+      style="max-width: 10rem"
       class="m-2"
     >
       <b-card-text>
-        Product 1 Name
-      </b-card-text>
-    </b-card>
-    <b-card
-      img-src="https://picsum.photos/600/300/?image=25"
-      img-alt="Image"
-      img-top
-      tag="article"
-      style="max-width: 20rem"
-      class="m-2"
-    >
-      <b-card-text>
-        Product 2 Name
+        <h4>producto prueba</h4>
       </b-card-text>
     </b-card>
 </b-card-group>

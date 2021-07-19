@@ -1,23 +1,33 @@
 <template>
   <div>
-    <b-card title="Card Title" body-class="text-center" header-tag="nav">
-      <template #header>
-        <b-nav card-header tabs>
-          <b-nav-item active>Active</b-nav-item>
-          <b-nav-item>Inactive</b-nav-item>
-          <b-nav-item disabled>Disabled</b-nav-item>
-        </b-nav>
-      </template>
-
-      <b-card-text>
-        With supporting text below as a natural lead-in to additional content.
-      </b-card-text>
-
-      <b-button variant="primary">Go somewhere</b-button>
+    <b-card class="b-card">
+      <b-tabs card>
+        <b-tab title="Tab 1" active>
+            <b-card-group>
+              <products />
+            </b-card-group>
+        </b-tab>
+        <b-tab title="Tab 2">
+           <b-card-group>
+              <products />
+            </b-card-group>
+        </b-tab>
+      </b-tabs>
     </b-card>
   </div>
 </template>
+
+
 <script lang="ts">
 import Vue from "vue";
-export default Vue.extend({});
+import products from "./products.vue";
+
+export default Vue.extend({
+  components: {
+    products,
+  },
+});
 </script>
+<style lang="sass">
+.b-card
+</style>

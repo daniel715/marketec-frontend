@@ -2,8 +2,10 @@
   <div class="container">
     <div class="father">
       <headerComponent/>
+      <searchSection/>
       <productsBar />
       <productDiscountBar />
+      <footerComponent/>
     </div>
   </div>
 </template>
@@ -12,12 +14,16 @@
 import productsBar from "./productsBar.vue";
 import productDiscountBar from "./productDiscountBar.vue";
 import headerComponent from "../partials/header.vue"
+import searchSection from "../PaginaPrincipal/searchSection.vue"
+import footerComponent from "../partials/footer.vue"
 
 export default {
   components: {
     productsBar,
     productDiscountBar,
-    headerComponent
+    headerComponent,
+    searchSection,
+    footerComponent
   },
 };
 </script>

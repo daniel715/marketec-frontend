@@ -1,8 +1,9 @@
 <template>
   <div class="container">
     <div class="father">
-        <productsBar />
-        <productDiscountBar />
+      <headerComponent/>
+      <productsBar />
+      <productDiscountBar />
     </div>
   </div>
 </template>
@@ -10,11 +11,13 @@
 <script>
 import productsBar from "./productsBar.vue";
 import productDiscountBar from "./productDiscountBar.vue";
+import headerComponent from "../partials/header.vue"
 
 export default {
   components: {
     productsBar,
     productDiscountBar,
+    headerComponent
   },
 };
 </script>
@@ -29,9 +32,6 @@ export default {
     height: 100%;
     width: 100% ;
     text-align: center;
-
-
-
 .father
     width: 80%
 

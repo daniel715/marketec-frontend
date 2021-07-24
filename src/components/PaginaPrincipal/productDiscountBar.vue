@@ -1,43 +1,59 @@
 <template>
-  <div>
-    <b-card class="b-card">
-      <b-tabs card>
-        <b-tab title="Tab 1" active>
-            <b-card-group>
-                <div class="father">
-                    <products />
-                    <div class="son">
-                        <discountLabel/>
-                    </div>
-                </div>
-            </b-card-group>
-        </b-tab>
-        <b-tab title="Tab 2">
-            <h1> tab de prueba, aqui ira la demas data</h1>
-        </b-tab>
-      </b-tabs>
-    </b-card>
+  <div id="container">
+    <div id="title">
+      <h1>Aprovecha</h1>
+    </div>
+    <b-carousel
+      id="carousel-1"
+      v-model="slide"
+      :interval="4000"
+      controls
+      indicators
+      background="#ababab"
+      img-width="1024"
+      img-height="480"
+      style="text-shadow: 1px 1px 2px #333;"
+      @sliding-start="onSlideStart"
+      @sliding-end="onSlideEnd"
+    >
+      <b-card class="b-card">
+        <b-card-group>
+          <div class="product-container">
+            <products />
+            <div class="discount-label">
+              <discountLabel />
+            </div>
+          </div>
+        </b-card-group>
+      </b-card>
+    </b-carousel>
   </div>
 </template>
-
 
 <script lang="ts">
 import Vue from "vue";
 import products from "./products.vue";
-import discountLabel from './discountLabel.vue';
+import discountLabel from "./discountLabel.vue";
 
 export default Vue.extend({
   components: {
     products,
-    discountLabel
+    discountLabel,
   },
 });
 </script>
+
 <style lang="sass" scoped>
-.father
-    position: relative;
-.son
-    position: absolute;
-    top: 0;
-    right: 0;
+#container
+  color: orange
+  background-color: white
+.product-container
+  position: relative;
+.discount-label
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
 </style>

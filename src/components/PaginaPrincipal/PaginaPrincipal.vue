@@ -5,6 +5,7 @@
       <searchSection/>
       <productsBar />
       <productDiscountBar />
+      <featuredStoresBar/>
       <footerComponent/>
     </div>
   </div>
@@ -16,6 +17,7 @@ import productDiscountBar from "./productDiscountBar.vue";
 import headerComponent from "../partials/header.vue"
 import searchSection from "../PaginaPrincipal/searchSection.vue"
 import footerComponent from "../partials/footer.vue"
+import featuredStoresBar from "./featuredStoresBar"
 
 export default {
   components: {
@@ -23,7 +25,8 @@ export default {
     productDiscountBar,
     headerComponent,
     searchSection,
-    footerComponent
+    footerComponent,
+    featuredStoresBar
   },
 };
 </script>

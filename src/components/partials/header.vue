@@ -27,9 +27,9 @@ export default Vue.extend({
     flex-direction: row
     justify-content: space-between;
 #title
-    color: orange
+    color: #F6874F
 .btn_login
-    background-color: orange
+    background-color: #F6874F
     border: 0px
 
 </style>

@@ -1,17 +1,11 @@
 <template>
   <div id="container">
     <div id="title">
-      <h1>Aprovecha</h1>
+      <h1>Aprovecha!</h1>
     </div>
     <b-carousel
       id="carousel-1"
-      v-model="slide"
       :interval="4000"
-      controls
-      indicators
-      background="#ababab"
-      img-width="1024"
-      img-height="480"
       style="text-shadow: 1px 1px 2px #333;"
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
@@ -19,7 +13,7 @@
       <b-card class="b-card">
         <b-card-group>
           <div class="product-container">
-            <products />
+            <product />
             <div class="discount-label">
               <discountLabel />
             </div>
@@ -32,12 +26,12 @@
 
 <script lang="ts">
 import Vue from "vue";
-import products from "./products.vue";
+import product from "./product.vue";
 import discountLabel from "./discountLabel.vue";
 
 export default Vue.extend({
   components: {
-    products,
+    product,
     discountLabel,
   },
 });
@@ -45,15 +39,22 @@ export default Vue.extend({
 
 <style lang="sass" scoped>
 #container
-  color: orange
   background-color: white
+  color: #F6874F
+
+#title
+  max-width: 0
+  margin-left: 20px
+
 .product-container
-  position: relative;
+  position: relative
+
 .discount-label
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: absolute
+  top: 0
+  right: 0
+
+.b-card
+  background-color: #F6874F
+
 </style>

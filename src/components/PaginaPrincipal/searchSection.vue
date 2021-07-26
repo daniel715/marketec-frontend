@@ -1,7 +1,7 @@
 <template>
   <div id="container">
     <div id="father">
-      <div>
+      <div id="title">
         <h1>QUE SE TE ANTOJA?</h1>
       </div>
       <div>
@@ -40,5 +40,6 @@
 
 .searchInput
   border-right: none;
-
+#title
+  color: #F6874F
 </style>

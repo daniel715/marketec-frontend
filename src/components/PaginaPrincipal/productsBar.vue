@@ -2,12 +2,12 @@
   <div>
     <b-card class="b-card">
       <b-tabs card>
-        <b-tab title="Tab 1" active>
+        <b-tab title="Tuberculos" active>
             <b-card-group>
-              <products />
+              <product />
             </b-card-group>
         </b-tab>
-        <b-tab title="Tab 2">
+        <b-tab title="Carnes">
            <b-card-group>
               <products />
             </b-card-group>
@@ -20,11 +20,11 @@
 
 <script lang="ts">
 import Vue from "vue";
-import products from "./products.vue";
+import product from "./product.vue";
 
 export default Vue.extend({
   components: {
-    products,
+    product,
   },
 });
 </script>
